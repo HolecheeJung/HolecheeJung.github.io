@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BHI 2026 conference paper on mobile auscultation and valvular heart disease screening.">
+<meta name="citation_title" content="A Machine-Learning-Based Mobile Auscultation System for Valvular Heart Disease Screening">
+<meta name="citation_author" content="Zhaoyang Liu">
+<meta name="citation_author" content="Yuxiang Zhu">
+<meta name="citation_author" content="Houqi Jiang">
+<meta name="citation_author" content="Chi Zhang">
+<meta name="citation_author" content="Jin She">
+<meta name="citation_author" content="Sheng Xie">
+<meta name="citation_conference_title" content="IEEE EMBS BHI 2026">
+<meta name="citation_pdf_url" content="https://holecheejung.github.io/publications/bhi2026/paper.pdf">
+<title>A Machine-Learning-Based Mobile Auscultation System for Valvular Heart Disease Screening | Houqi Jiang</title>
+<style>
+:root{color-scheme:light;--ink:#18354e;--muted:#546575;--line:#dce5e9;--accent:#087f8c}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:clamp(24px,7vw,64px) 24px}
+a{color:var(--accent);text-underline-offset:3px}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+header{padding-bottom:28px;border-bottom:1px solid var(--line)}h1{font-size:clamp(27px,5vw,38px);line-height:1.2;letter-spacing:-.025em;margin:12px 0 18px}
+.venue,.muted{color:var(--muted)}.venue{font-size:14px;font-weight:600;letter-spacing:.025em;margin-top:28px}
+.authors{font-size:17px}sup{font-size:.7em}.affiliations{font-size:14px;color:var(--muted);line-height:1.55;margin-top:12px}.affiliations p{margin:4px 0}.note{font-size:13px;color:var(--muted);margin-top:12px}
+section{padding:25px 0;border-bottom:1px solid var(--line)}h2{font-size:22px;margin:0 0 12px}p{margin:0 0 12px}p:last-child{margin-bottom:0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center}.primary{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:10px 20px;border-radius:6px;font-weight:600}.primary:hover{background:#086873}
+footer{color:var(--muted);font-size:14px;padding-top:24px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<nav aria-label="Breadcrumb"><a href="../../#publications">← Publications</a></nav>
+<p class="venue">IEEE EMBS BHI 2026 · Conference paper · Paper 458</p>
+<h1>A Machine-Learning-Based Mobile Auscultation System for Valvular Heart Disease Screening</h1>
+<p class="authors">Zhaoyang Liu<sup>1,†</sup>, Yuxiang Zhu<sup>1,†</sup>, <strong>Houqi Jiang</strong><sup>1</sup>, Chi Zhang<sup>1,*</sup>, Jin She<sup>2</sup>, Sheng Xie<sup>3</sup></p>
+<div class="affiliations">
+<p><sup>1</sup> School of Biological Science and Medical Engineering, Beihang University, Beijing, China</p>
+<p><sup>2</sup> Medical Engineering Department, Yichang Central People's Hospital, Yichang, China</p>
+<p><sup>3</sup> Department of Radiology, China-Japan Friendship Hospital, Beijing, China</p>
+</div>
+<p class="note">† Equal contribution. * Corresponding author.</p>
+<div class="actions"><a class="primary" href="paper.pdf">Read paper (PDF)</a><a href="paper.pdf" download="BHI2026_Paper458.pdf">Download PDF</a></div>
+</header>
+<section><h2>Abstract</h2><p>Traditional cardiac auscultation relies heavily on physician experience, which can limit its use as an initial assessment tool. This paper describes a lightweight intelligent auscultation prototype integrating a single-channel electronic stethoscope interface, a WeChat mini-program frontend, and a FastAPI backend. The offline benchmark uses complete denoised recordings, OpenSMILE ComParE_2016 Functionals (6,373 dimensions), recursive feature elimination with cross-validation (RFECV) to reduce the representation to 173 features (97.3% reduction), and linear SVM classification across five categories (AS, MR, MS, MVP, and N). On a held-out file-level partition of a heterogeneous public collection containing 1,000 audio files (200 per class), the RFECV-SVM achieved 97.5% accuracy and 0.9750 macro-F1, compared with 96.50% accuracy and 0.9648 macro-F1 for the full-feature baseline SVM. Exploratory SHAP analysis summarizes model-level feature attribution across MFCC, auditory-spectrum, FFT spectral, energy-envelope, voicing/periodicity, and zero-crossing-rate descriptor groups. The implemented prototype provides an engineering framework for audio input, analysis, and structured model-output presentation; clinical utility, workflow performance, and generalization require further prospective evaluation.</p></section>
+<section><h2>Keywords</h2><p>Heart sound, intelligent auscultation, valvular heart disease, OpenSMILE, RFECV, SVM.</p></section>
+<section><h2>Publication information</h2><p>Accepted for presentation at IEEE EMBS BHI 2026, Poster Session 1, December 12, 2026.</p><p class="muted">DOI and official publication details will be added when available. Please refer to the official IEEE publication for the version of record once it is published. Rights and permitted reuse are governed by the applicable IEEE publication agreement.</p></section>
+<footer><a href="../../">Houqi Jiang · Academic website</a></footer>
+</main>
+</body>
+</html>
